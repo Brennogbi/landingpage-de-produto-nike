@@ -1,4 +1,4 @@
-const circles = document.querySelectorAll('.circle'); // todas as bolinhas de cores
+const circles = document.querySelectorAll('.circle') // todas as bolinhas de cores
 const imageArea = document.querySelector('.image-area'); // apenas um elemento
 const tenisImg = document.getElementById('tenis-img'); // imagem do tênis
 const botao = document.querySelector('.bnt')
