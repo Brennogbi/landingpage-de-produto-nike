@@ -1,0 +1,199 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body{
+
+    background-color:#1111;
+    color: #fff;
+}
+#carrinho{
+
+    color: #000000;
+    font-size: 30px;
+    position: fixed;
+    top: 15px;
+   right: 10px;
+    
+}
+
+#contador-carrinho{
+    color: #e00101;
+    position: fixed;
+    top: 3px;
+   right: 10px;
+}
+
+.container
+{ display: flex;
+flex-wrap: wrap;
+min-height: 100vh;}
+
+.text-area{
+
+    flex: 0.45;
+    padding: 40px;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+.logo{
+    width: 60px;
+    margin-bottom: 10px;
+}
+h1{
+    font-size: 6rem;
+    margin: 10px 0;
+}
+h2{
+    color: #ccc;
+}
+p{
+    margin: 20px 0;
+    line-height: 1.5;
+    max-width: 400px;
+}
+.bnt{
+    width: 200px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f55eed;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}
+
+.bnt:hover{
+    background-color: #ff00d0;
+}
+
+.color-options{
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    
+   
+}
+
+.circle{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #ffffff;
+}
+.green{background-color: #ffe600;}
+.red{background-color: #ff0015;}
+.purple{background-color: rgb(186, 68, 255);}
+
+
+.green:hover{background-color: #ffe600;}
+.red:hover{background-color: #e00101;}
+.purple:hover{background-color: rgb(159, 0, 252);}
+
+
+
+.image-area{
+
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.image-area img{
+    width: 100%;
+    max-width: 600px;
+    transition: transform 0.5s ease;
+}
+footer{
+    color: rgb(243, 242, 242);
+    position: fixed;
+    bottom: 0;
+   display: flex;
+    gap: 20px;
+    font-size: 20px;
+
+
+}
+
+
+@media (max-width:768px) {
+    .container{
+        flex-direction: column-reverse;/* inverte a orden para o texto vim antes da imagem*/
+    }
+    
+    .text-area, .image-area{
+        flex: none; /* cancela a divisao de 50/50 do desktop*/
+        width: 100%; /*faz a imagem ocupar largura total da tela*/
+        padding: 30px 20px;/*espaço interno ajustado para tela menor*/
+        text-align: center; /*centraliza o texto e os botoes*/
+    }
+
+    .image-area, img{    /*reduz o tamanho da imagem do tenis no mobile*/
+        width: 100%;
+        max-width: 400px;
+       
+    }
+
+.bnt{
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+}
+
+.color-options{
+    justify-content: center;
+    position: absolute;
+    top: 320px;
+}
+
+
+h1{
+
+    font-size: 2.2rem;
+}
+
+
+p{
+
+    font-size: 1rem;
+    max-width: 100%;
+}
+
+h2{
+
+    font-size: 1.2rem;
+}
+.logo{
+    display: none;
+    margin: 0 auto 20px auto; /*centraliza hotizontakmente o logo no bobile e 20px espaço abaixo dele*/
+    
+}
+
+
+    footer{
+    
+       display: flexbox;
+       left: 116px;
+        
+        
+        
+    
+    
+    
+}
+
+;
+
+
+
+}
